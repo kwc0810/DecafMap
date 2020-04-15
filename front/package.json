@@ -4,7 +4,9 @@
   "description": "디카페인 맵",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
   },
   "repository": {
     "type": "git",
@@ -18,5 +20,18 @@
   "bugs": {
     "url": "https://github.com/kwc0810/DecafMap/issues"
   },
-  "homepage": "https://github.com/kwc0810/DecafMap#readme"
+  "homepage": "https://github.com/kwc0810/DecafMap#readme",
+  "dependencies": {
+    "next": "^9.3.5",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "devDependencies": {
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-react": "^7.19.0",
+    "eslint-plugin-react-hooks": "^3.0.0",
+    "eslint": "^6.8.0",
+    "nodemon": "^2.0.3",
+    "webpack": "^4.42.1"
+  }
 }
