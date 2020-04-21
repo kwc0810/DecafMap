@@ -115,6 +115,72 @@ module.exports = require("next/dist/next-server/lib/utils.js");
 
 /***/ }),
 
+/***/ "./Styles/GlobalStyles.js":
+/*!********************************!*\
+  !*** ./Styles/GlobalStyles.js ***!
+  \********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-components */ "styled-components");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var styled_reset__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-reset */ "styled-reset");
+/* harmony import */ var styled_reset__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(styled_reset__WEBPACK_IMPORTED_MODULE_1__);
+
+
+/* harmony default export */ __webpack_exports__["default"] = (styled_components__WEBPACK_IMPORTED_MODULE_0__["createGlobalStyle"]`
+    ${styled_reset__WEBPACK_IMPORTED_MODULE_1___default.a};
+    
+    body {
+        background-color:${props => props.theme.bgColor};
+        color:${props => props.theme.blackColor};
+        font-size:14px;
+        font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        padding-top: 140px;
+    }
+    a {
+        color:${props => props.theme.blueColor};
+        text-decoration:none;
+    }
+    input:focus{
+        outline:none;
+    }
+`);
+
+/***/ }),
+
+/***/ "./Styles/Theme.js":
+/*!*************************!*\
+  !*** ./Styles/Theme.js ***!
+  \*************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+const BOX_BORDER = "1px solid #e6e6e6";
+const BORDER_RADIUS = "4px";
+/* harmony default export */ __webpack_exports__["default"] = ({
+  maxWidth: "935px",
+  bgColor: "#F0F0F3",
+  blackColor: "#262626",
+  blueColor: "#3897f0",
+  darkBlueColor: "#003569",
+  darkGreyColor: "#999",
+  lightGreyColor: "#c7c7c7",
+  redColor: "#ED4956",
+  boxBorder: "1px solid #e6e6e6",
+  borderRadius: "4px",
+  whiteBox: `border:${BOX_BORDER};
+                border-radius:${BORDER_RADIUS};
+                background-color:white;
+    `
+});
+
+/***/ }),
+
 /***/ "./components/AppLayout.js":
 /*!*********************************!*\
   !*** ./components/AppLayout.js ***!
@@ -126,12 +192,14 @@ module.exports = require("next/dist/next-server/lib/utils.js");
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var antd__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! antd */ "antd");
-/* harmony import */ var antd__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(antd__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _ant_design_icons__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @ant-design/icons */ "@ant-design/icons");
-/* harmony import */ var _ant_design_icons__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_ant_design_icons__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "styled-components");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var antd__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! antd */ "antd");
+/* harmony import */ var antd__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(antd__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _ant_design_icons__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @ant-design/icons */ "@ant-design/icons");
+/* harmony import */ var _ant_design_icons__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_ant_design_icons__WEBPACK_IMPORTED_MODULE_4__);
 var _jsxFileName = "C:\\Users\\admin\\Desktop\\DecafMap\\front\\components\\AppLayout.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
@@ -139,169 +207,53 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
+const Header = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.header`
+  width: 100%;
+  border: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: white;
+  border-bottom: ${props => props.theme.boxBorder};
+  border-radius: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px 0px;
+  z-index: 2;
+`;
+const HeaderWrapper = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.div`
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+`;
+
 const AppLayout = ({
   children
 }) => {
-  return __jsx("div", {
+  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx("div", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9,
+      lineNumber: 35,
       columnNumber: 13
     }
-  }, __jsx("div", {
-    style: {
-      display: 'inline-block',
-      width: '100%',
-      textAlign: 'center'
-    },
+  }, __jsx(Header, {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10,
+      lineNumber: 36,
       columnNumber: 17
     }
-  }, __jsx(antd__WEBPACK_IMPORTED_MODULE_1__["Row"], {
-    gutter: 8,
+  }, __jsx(HeaderWrapper, {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13,
+      lineNumber: 37,
       columnNumber: 21
     }
-  }, __jsx(antd__WEBPACK_IMPORTED_MODULE_1__["Col"], {
-    xs: 24,
-    md: 6,
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 14,
-      columnNumber: 25
-    }
-  }, __jsx(antd__WEBPACK_IMPORTED_MODULE_1__["Menu"], {
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 15,
-      columnNumber: 29
-    }
-  }, __jsx(antd__WEBPACK_IMPORTED_MODULE_1__["Menu"].Item, {
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 16,
-      columnNumber: 33
-    }
-  }, __jsx(_ant_design_icons__WEBPACK_IMPORTED_MODULE_3__["FullscreenExitOutlined"], {
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 17,
-      columnNumber: 38
-    }
-  })))), __jsx(antd__WEBPACK_IMPORTED_MODULE_1__["Col"], {
-    xs: 24,
-    md: 6,
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 23,
-      columnNumber: 25
-    }
-  }, __jsx(antd__WEBPACK_IMPORTED_MODULE_1__["Menu"], {
-    mode: "horizontal",
-    style: {
-      width: '100%'
-    },
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 24,
-      columnNumber: 29
-    }
-  }, __jsx(antd__WEBPACK_IMPORTED_MODULE_1__["Menu"].Item, {
-    key: "home",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 25,
-      columnNumber: 33
-    }
-  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
-    href: "/",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 25,
-      columnNumber: 55
-    }
-  }, __jsx("a", {
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 25,
-      columnNumber: 70
-    }
-  }, "\uB514\uCE74\uD398\uC778"))), __jsx(antd__WEBPACK_IMPORTED_MODULE_1__["Menu"].Item, {
-    key: "profile",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 26,
-      columnNumber: 33
-    }
-  }, "\uD504\uB85C\uD544"))), __jsx(antd__WEBPACK_IMPORTED_MODULE_1__["Col"], {
-    xs: 24,
-    md: 6,
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 30,
-      columnNumber: 25
-    }
-  }, __jsx(antd__WEBPACK_IMPORTED_MODULE_1__["Menu"], {
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 31,
-      columnNumber: 30
-    }
-  }, __jsx(antd__WEBPACK_IMPORTED_MODULE_1__["Menu"].Item, {
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 32,
-      columnNumber: 33
-    }
-  }, __jsx(antd__WEBPACK_IMPORTED_MODULE_1__["Input"].Search, {
-    enterButton: true,
-    style: {
-      verticalAlign: 'middle'
-    },
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 33,
-      columnNumber: 37
-    }
-  })))))), __jsx(antd__WEBPACK_IMPORTED_MODULE_1__["Row"], {
-    gutter: 8,
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 40,
-      columnNumber: 17
-    }
-  }, __jsx(antd__WEBPACK_IMPORTED_MODULE_1__["Col"], {
-    xs: 24,
-    md: 12,
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 41,
-      columnNumber: 21
-    }
-  }, children)));
+  })), children));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (AppLayout);
@@ -2249,8 +2201,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_AppLayout__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/AppLayout */ "./components/AppLayout.js");
 /* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-redux */ "react-redux");
 /* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react_redux__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! styled-components */ "styled-components");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _Styles_Theme__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../Styles/Theme */ "./Styles/Theme.js");
+/* harmony import */ var _Styles_GlobalStyles__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../Styles/GlobalStyles */ "./Styles/GlobalStyles.js");
 var _jsxFileName = "C:\\Users\\admin\\Desktop\\DecafMap\\front\\pages\\_app.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+
 
 
 
@@ -2259,19 +2218,34 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 const MyApp = ({
   Component
 }) => {
-  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(next_head__WEBPACK_IMPORTED_MODULE_1___default.a, {
+  return __jsx(styled_components__WEBPACK_IMPORTED_MODULE_4__["ThemeProvider"], {
+    theme: _Styles_Theme__WEBPACK_IMPORTED_MODULE_5__["default"],
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 12,
+      columnNumber: 9
+    }
+  }, __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_Styles_GlobalStyles__WEBPACK_IMPORTED_MODULE_6__["default"], {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 14,
       columnNumber: 13
+    }
+  }), __jsx(next_head__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 15,
+      columnNumber: 17
     }
   }, __jsx("title", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13,
-      columnNumber: 17
+      lineNumber: 16,
+      columnNumber: 21
     }
   }, "DecafMap"), __jsx("link", {
     rel: "stylesheet",
@@ -2279,24 +2253,24 @@ const MyApp = ({
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14,
-      columnNumber: 17
+      lineNumber: 17,
+      columnNumber: 21
     }
   })), __jsx(_components_AppLayout__WEBPACK_IMPORTED_MODULE_2__["default"], {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 16,
-      columnNumber: 13
+      lineNumber: 19,
+      columnNumber: 17
     }
   }, __jsx(Component, {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 17,
-      columnNumber: 17
+      lineNumber: 20,
+      columnNumber: 21
     }
-  })));
+  }))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (MyApp);
@@ -2389,6 +2363,28 @@ module.exports = require("react");
 /***/ (function(module, exports) {
 
 module.exports = require("react-redux");
+
+/***/ }),
+
+/***/ "styled-components":
+/*!************************************!*\
+  !*** external "styled-components" ***!
+  \************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("styled-components");
+
+/***/ }),
+
+/***/ "styled-reset":
+/*!*******************************!*\
+  !*** external "styled-reset" ***!
+  \*******************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("styled-reset");
 
 /***/ }),
 
