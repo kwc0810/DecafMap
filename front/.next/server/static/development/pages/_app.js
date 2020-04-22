@@ -228,6 +228,33 @@ const HeaderWrapper = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.d
   display: flex;
   justify-content: center;
 `;
+const HeaderColumn = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.div`
+  width: 33%;
+  text-align: center;
+  &:first-child {
+    margin-right: auto;
+    text-align: center;
+  }
+
+  
+  &:last-child {
+    margin-left: auto;
+    text-align: center;
+  }
+`;
+const SearchInput = styled_components__WEBPACK_IMPORTED_MODULE_1___default()(antd__WEBPACK_IMPORTED_MODULE_2__["Input"])`
+  background-color: ${props => props.theme.bgColor};
+  padding: 5px;
+  font-size: 14px;
+  border-radius: 3px;
+  height: auto;
+  text-align: center;
+  width: 70%;
+  &::placeholder {
+    opacity: 0.8;
+    font-weight: 200;
+  }
+`;
 
 const AppLayout = ({
   children
@@ -236,24 +263,86 @@ const AppLayout = ({
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 35,
+      lineNumber: 63,
       columnNumber: 13
     }
   }, __jsx(Header, {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 36,
+      lineNumber: 64,
       columnNumber: 17
     }
   }, __jsx(HeaderWrapper, {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 37,
+      lineNumber: 65,
       columnNumber: 21
     }
-  })), children));
+  }, __jsx(HeaderColumn, {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 66,
+      columnNumber: 25
+    }
+  }, __jsx(_ant_design_icons__WEBPACK_IMPORTED_MODULE_4__["FullscreenExitOutlined"], {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 67,
+      columnNumber: 29
+    }
+  }), "\uD14C\uC2A4\uD2B8"), __jsx(HeaderColumn, {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 71,
+      columnNumber: 25
+    }
+  }, __jsx("form", {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 72,
+      columnNumber: 25
+    }
+  }, __jsx(SearchInput, {
+    placeholder: "\uAC80\uC0C9",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 73,
+      columnNumber: 29
+    }
+  }))), __jsx(HeaderColumn, {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 80,
+      columnNumber: 25
+    }
+  }, __jsx("span", {
+    style: {
+      marginRight: "10px",
+      borderRight: 'solid 1px #F0F0F3',
+      padding: '10px'
+    },
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 81,
+      columnNumber: 29
+    }
+  }, "\uB85C\uADF8\uC778"), __jsx("span", {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 84,
+      columnNumber: 29
+    }
+  }, "\uD68C\uC6D0\uAC00\uC785")))), children));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (AppLayout);

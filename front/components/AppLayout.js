@@ -27,6 +27,34 @@ const HeaderWrapper = styled.div`
   display: flex;
   justify-content: center;
 `;
+const HeaderColumn = styled.div`
+  width: 33%;
+  text-align: center;
+  &:first-child {
+    margin-right: auto;
+    text-align: center;
+  }
+
+  
+  &:last-child {
+    margin-left: auto;
+    text-align: center;
+  }
+`;
+
+const SearchInput = styled(Input)`
+  background-color: ${props => props.theme.bgColor};
+  padding: 5px;
+  font-size: 14px;
+  border-radius: 3px;
+  height: auto;
+  text-align: center;
+  width: 70%;
+  &::placeholder {
+    opacity: 0.8;
+    font-weight: 200;
+  }
+`;
 
 const AppLayout = ({children}) => {
     
@@ -35,7 +63,28 @@ const AppLayout = ({children}) => {
             <div>
                 <Header>
                     <HeaderWrapper>
+                        <HeaderColumn>
+                            <FullscreenExitOutlined/>
+                            테스트
+                        </HeaderColumn>
+
+                        <HeaderColumn>
+                        <form >
+                            <SearchInput 
                         
+                            placeholder="검색" 
+                            />
+                        </form>
+                        </HeaderColumn>
+
+                        <HeaderColumn>
+                            <span style={{marginRight: "10px", borderRight: 'solid 1px #F0F0F3', padding: '10px'}}>
+                                로그인
+                            </span>
+                            <span>
+                                회원가입 
+                            </span>
+                        </HeaderColumn>
                     </HeaderWrapper>
                 </Header>
                 {children}
