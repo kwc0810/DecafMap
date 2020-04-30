@@ -23,7 +23,9 @@
   "homepage": "https://github.com/kwc0810/DecafMap#readme",
   "dependencies": {
     "antd": "^4.1.4",
+    "file-loader": "^6.0.0",
     "next": "^9.3.5",
+    "next-images": "^1.4.0",
     "next-redux-wrapper": "^5.0.0",
     "prop-types": "^15.7.2",
     "react": "^16.13.1",

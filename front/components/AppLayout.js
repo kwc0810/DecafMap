@@ -2,7 +2,8 @@ import React from 'react';
 import styled from "styled-components";
 import { Col, Input, Menu, Row } from 'antd';
 import Link from 'next/link';
-import {FullscreenExitOutlined } from '@ant-design/icons'
+import Logo from "../Styles/images/Logo.png"
+
 
 
 const Header = styled.header`
@@ -30,6 +31,7 @@ const HeaderWrapper = styled.div`
 const HeaderColumn = styled.div`
   width: 33%;
   text-align: center;
+  verticalAlign: middle;
   &:first-child {
     margin-right: auto;
     text-align: center;
@@ -56,6 +58,13 @@ const SearchInput = styled(Input)`
   }
 `;
 
+const LogoImage = styled.a`
+  background-image: url(${props => props.image});
+  z-index:1;
+  width: 100%;
+`;
+
+
 const AppLayout = ({children}) => {
     
     return (
@@ -64,17 +73,17 @@ const AppLayout = ({children}) => {
                 <Header>
                     <HeaderWrapper>
                         <HeaderColumn>
-                            <FullscreenExitOutlined/>
-                            테스트
+                         <Link href="/"><LogoImage image={Logo}>로고자리
+                         </LogoImage></Link>
                         </HeaderColumn>
 
                         <HeaderColumn>
-                        <form >
-                            <SearchInput 
-                        
-                            placeholder="검색" 
-                            />
-                        </form>
+                          <form >
+                              <SearchInput 
+                          
+                              placeholder="검색" 
+                              />
+                          </form>
                         </HeaderColumn>
 
                         <HeaderColumn>

@@ -181,6 +181,17 @@ const BORDER_RADIUS = "4px";
 
 /***/ }),
 
+/***/ "./Styles/images/Logo.png":
+/*!********************************!*\
+  !*** ./Styles/images/Logo.png ***!
+  \********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/_next/static/images/Logo-1f3b5a9b20b8eeb9146ffe5ab01c0854.png";
+
+/***/ }),
+
 /***/ "./components/AppLayout.js":
 /*!*********************************!*\
   !*** ./components/AppLayout.js ***!
@@ -198,8 +209,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var antd__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(antd__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _ant_design_icons__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @ant-design/icons */ "@ant-design/icons");
-/* harmony import */ var _ant_design_icons__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_ant_design_icons__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _Styles_images_Logo_png__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../Styles/images/Logo.png */ "./Styles/images/Logo.png");
+/* harmony import */ var _Styles_images_Logo_png__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_Styles_images_Logo_png__WEBPACK_IMPORTED_MODULE_4__);
 var _jsxFileName = "C:\\Users\\admin\\Desktop\\DecafMap\\front\\components\\AppLayout.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
@@ -231,6 +242,7 @@ const HeaderWrapper = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.d
 const HeaderColumn = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.div`
   width: 33%;
   text-align: center;
+  verticalAlign: middle;
   &:first-child {
     margin-right: auto;
     text-align: center;
@@ -255,6 +267,11 @@ const SearchInput = styled_components__WEBPACK_IMPORTED_MODULE_1___default()(ant
     font-weight: 200;
   }
 `;
+const LogoImage = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.a`
+  background-image: url(${props => props.image});
+  z-index:1;
+  width: 100%;
+`;
 
 const AppLayout = ({
   children
@@ -263,64 +280,73 @@ const AppLayout = ({
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 63,
+      lineNumber: 72,
       columnNumber: 13
     }
   }, __jsx(Header, {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 64,
+      lineNumber: 73,
       columnNumber: 17
     }
   }, __jsx(HeaderWrapper, {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 65,
+      lineNumber: 74,
       columnNumber: 21
     }
   }, __jsx(HeaderColumn, {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 66,
+      lineNumber: 75,
       columnNumber: 25
     }
-  }, __jsx(_ant_design_icons__WEBPACK_IMPORTED_MODULE_4__["FullscreenExitOutlined"], {
+  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_3___default.a, {
+    href: "/",
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 67,
-      columnNumber: 29
+      lineNumber: 76,
+      columnNumber: 26
     }
-  }), "\uD14C\uC2A4\uD2B8"), __jsx(HeaderColumn, {
+  }, __jsx(LogoImage, {
+    image: _Styles_images_Logo_png__WEBPACK_IMPORTED_MODULE_4___default.a,
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 71,
+      lineNumber: 76,
+      columnNumber: 41
+    }
+  }, "\uB85C\uACE0\uC790\uB9AC"))), __jsx(HeaderColumn, {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 80,
       columnNumber: 25
     }
   }, __jsx("form", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 72,
-      columnNumber: 25
+      lineNumber: 81,
+      columnNumber: 27
     }
   }, __jsx(SearchInput, {
     placeholder: "\uAC80\uC0C9",
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 73,
-      columnNumber: 29
+      lineNumber: 82,
+      columnNumber: 31
     }
   }))), __jsx(HeaderColumn, {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 80,
+      lineNumber: 89,
       columnNumber: 25
     }
   }, __jsx("span", {
@@ -332,14 +358,14 @@ const AppLayout = ({
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 81,
+      lineNumber: 90,
       columnNumber: 29
     }
   }, "\uB85C\uADF8\uC778"), __jsx("span", {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 84,
+      lineNumber: 93,
       columnNumber: 29
     }
   }, "\uD68C\uC6D0\uAC00\uC785")))), children));
@@ -2375,17 +2401,6 @@ const MyApp = ({
 
 module.exports = __webpack_require__(/*! private-next-pages/_app.js */"./pages/_app.js");
 
-
-/***/ }),
-
-/***/ "@ant-design/icons":
-/*!************************************!*\
-  !*** external "@ant-design/icons" ***!
-  \************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("@ant-design/icons");
 
 /***/ }),
 
