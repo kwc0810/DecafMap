@@ -211,8 +211,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var _Styles_images_Logo_png__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../Styles/images/Logo.png */ "./Styles/images/Logo.png");
 /* harmony import */ var _Styles_images_Logo_png__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_Styles_images_Logo_png__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _pages_LoginForm__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../pages/LoginForm */ "./pages/LoginForm.js");
 var _jsxFileName = "C:\\Users\\admin\\Desktop\\DecafMap\\front\\components\\AppLayout.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
 
 
 
@@ -310,7 +312,7 @@ const AppLayout = ({
     __source: {
       fileName: _jsxFileName,
       lineNumber: 76,
-      columnNumber: 26
+      columnNumber: 27
     }
   }, __jsx(LogoImage, {
     image: _Styles_images_Logo_png__WEBPACK_IMPORTED_MODULE_4___default.a,
@@ -318,7 +320,7 @@ const AppLayout = ({
     __source: {
       fileName: _jsxFileName,
       lineNumber: 76,
-      columnNumber: 41
+      columnNumber: 42
     }
   }, "\uB85C\uACE0\uC790\uB9AC"))), __jsx(HeaderColumn, {
     __self: undefined,
@@ -361,11 +363,29 @@ const AppLayout = ({
       lineNumber: 90,
       columnNumber: 29
     }
-  }, "\uB85C\uADF8\uC778"), __jsx("span", {
+  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_3___default.a, {
+    href: "/LoginForm",
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 93,
+      lineNumber: 91,
+      columnNumber: 30
+    }
+  }, __jsx("a", {
+    style: {
+      color: '#000000'
+    },
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 91,
+      columnNumber: 54
+    }
+  }, "\uB85C\uADF8\uC778"))), __jsx("span", {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 94,
       columnNumber: 29
     }
   }, "\uD68C\uC6D0\uAC00\uC785")))), children));
@@ -2297,6 +2317,200 @@ if (false) {} else {
   module.exports = __webpack_require__(/*! ./cjs/react-is.development.js */ "./node_modules/next/node_modules/react-is/cjs/react-is.development.js");
 }
 
+
+/***/ }),
+
+/***/ "./pages/LoginForm.js":
+/*!****************************!*\
+  !*** ./pages/LoginForm.js ***!
+  \****************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var antd__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! antd */ "antd");
+/* harmony import */ var antd__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(antd__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! styled-components */ "styled-components");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_2__);
+var _jsxFileName = "C:\\Users\\admin\\Desktop\\DecafMap\\front\\pages\\LoginForm.js";
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+
+
+
+const Wrapper = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.div`
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+`;
+const layout = {
+  labelCol: {
+    span: 8
+  },
+  wrapperCol: {
+    span: 16
+  }
+};
+const tailLayout = {
+  wrapperCol: {
+    offset: 8,
+    span: 16
+  }
+};
+const Title = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.div`
+    padding: 50px 12px 25px 12px;
+    font-size: 20px;
+    font-weight: bold;
+    border-bottom: solid #E0E0E0 1px;
+`;
+
+const LoginForm = () => {
+  return __jsx(Wrapper, {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 37,
+      columnNumber: 9
+    }
+  }, __jsx(Title, {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 38,
+      columnNumber: 13
+    }
+  }, "\uB85C\uADF8\uC778 \uBC0F \uD68C\uC6D0\uAC00\uC785"), __jsx(antd__WEBPACK_IMPORTED_MODULE_1__["Form"], {
+    style: {
+      marginTop: '100px'
+    },
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 42,
+      columnNumber: 13
+    }
+  }, __jsx(antd__WEBPACK_IMPORTED_MODULE_1__["Form"].Item, {
+    label: "Username",
+    name: "usee",
+    rules: [{
+      required: true,
+      message: '아이디를 입력하세요!'
+    }],
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 43,
+      columnNumber: 17
+    }
+  }, __jsx(antd__WEBPACK_IMPORTED_MODULE_1__["Input"], {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 53,
+      columnNumber: 21
+    }
+  })), __jsx(antd__WEBPACK_IMPORTED_MODULE_1__["Form"].Item, {
+    label: "Password",
+    name: "password",
+    rules: [{
+      required: true,
+      message: 'Please input your password!'
+    }],
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 56,
+      columnNumber: 17
+    }
+  }, __jsx(antd__WEBPACK_IMPORTED_MODULE_1__["Input"].Password, {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 66,
+      columnNumber: 21
+    }
+  })), __jsx(antd__WEBPACK_IMPORTED_MODULE_1__["Form"].Item, _extends({}, tailLayout, {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 69,
+      columnNumber: 21
+    }
+  }), __jsx(antd__WEBPACK_IMPORTED_MODULE_1__["Button"], {
+    type: "primary",
+    htmlType: "submit",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 70,
+      columnNumber: 25
+    }
+  }, "\uB85C\uADF8\uC778"))), __jsx("div", {
+    style: {
+      padding: '14px 0'
+    },
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 76,
+      columnNumber: 13
+    }
+  }, __jsx("div", {
+    style: {
+      float: 'left',
+      borderBottom: 'solid #E0E0E0 1px',
+      width: '180px',
+      height: '7px'
+    },
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 77,
+      columnNumber: 21
+    }
+  }), __jsx("div", {
+    style: {
+      width: '40px',
+      textAlign: 'center',
+      float: 'left'
+    },
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 78,
+      columnNumber: 21
+    }
+  }, "\uB610\uB294"), __jsx("div", {
+    style: {
+      float: 'right',
+      borderBottom: 'solid #E0E0E0 1px',
+      width: '180px',
+      height: '7px'
+    },
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 81,
+      columnNumber: 21
+    }
+  })), __jsx(antd__WEBPACK_IMPORTED_MODULE_1__["Button"], {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 85,
+      columnNumber: 13
+    }
+  }, "\uD68C\uC6D0\uAC00\uC785"));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (LoginForm);
 
 /***/ }),
 

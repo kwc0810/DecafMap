@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { Col, Input, Menu, Row } from 'antd';
 import Link from 'next/link';
 import Logo from "../Styles/images/Logo.png"
-
+import LoginForm from '../pages/LoginForm';
 
 
 const Header = styled.header`
@@ -73,7 +73,7 @@ const AppLayout = ({children}) => {
                 <Header>
                     <HeaderWrapper>
                         <HeaderColumn>
-                         <Link href="/"><LogoImage image={Logo}>로고자리
+                          <Link href="/"><LogoImage image={Logo}>로고자리
                          </LogoImage></Link>
                         </HeaderColumn>
 
@@ -87,9 +87,10 @@ const AppLayout = ({children}) => {
                         </HeaderColumn>
 
                         <HeaderColumn>
-                            <span style={{marginRight: "10px", borderRight: 'solid 1px #F0F0F3', padding: '10px'}}>
-                                로그인
+                            <span style={{marginRight: "10px", borderRight: 'solid 1px #F0F0F3', padding: '10px'}}> 
+                             <Link href="/LoginForm"><a style={{color: '#000000'}}>로그인</a></Link>
                             </span>
+                            
                             <span>
                                 회원가입 
                             </span>
