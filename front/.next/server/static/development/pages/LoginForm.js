@@ -108,10 +108,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var antd__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(antd__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! styled-components */ "styled-components");
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! next/router */ "next/router");
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_3__);
 var _jsxFileName = "C:\\Users\\admin\\Desktop\\DecafMap\\front\\pages\\LoginForm.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
 
 
 
@@ -149,14 +152,14 @@ const LoginForm = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 37,
+      lineNumber: 38,
       columnNumber: 9
     }
   }, __jsx(Title, {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 38,
+      lineNumber: 39,
       columnNumber: 13
     }
   }, "\uB85C\uADF8\uC778 \uBC0F \uD68C\uC6D0\uAC00\uC785"), __jsx(antd__WEBPACK_IMPORTED_MODULE_1__["Form"], {
@@ -166,7 +169,7 @@ const LoginForm = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 42,
+      lineNumber: 43,
       columnNumber: 13
     }
   }, __jsx(antd__WEBPACK_IMPORTED_MODULE_1__["Form"].Item, {
@@ -179,14 +182,14 @@ const LoginForm = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 43,
+      lineNumber: 44,
       columnNumber: 17
     }
   }, __jsx(antd__WEBPACK_IMPORTED_MODULE_1__["Input"], {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 53,
+      lineNumber: 54,
       columnNumber: 21
     }
   })), __jsx(antd__WEBPACK_IMPORTED_MODULE_1__["Form"].Item, {
@@ -199,21 +202,21 @@ const LoginForm = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 56,
+      lineNumber: 57,
       columnNumber: 17
     }
   }, __jsx(antd__WEBPACK_IMPORTED_MODULE_1__["Input"].Password, {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 66,
+      lineNumber: 67,
       columnNumber: 21
     }
   })), __jsx(antd__WEBPACK_IMPORTED_MODULE_1__["Form"].Item, _extends({}, tailLayout, {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 69,
+      lineNumber: 70,
       columnNumber: 21
     }
   }), __jsx(antd__WEBPACK_IMPORTED_MODULE_1__["Button"], {
@@ -222,7 +225,7 @@ const LoginForm = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 70,
+      lineNumber: 71,
       columnNumber: 25
     }
   }, "\uB85C\uADF8\uC778"))), __jsx("div", {
@@ -232,7 +235,7 @@ const LoginForm = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 76,
+      lineNumber: 77,
       columnNumber: 13
     }
   }, __jsx("div", {
@@ -245,7 +248,7 @@ const LoginForm = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 77,
+      lineNumber: 78,
       columnNumber: 21
     }
   }), __jsx("div", {
@@ -257,7 +260,7 @@ const LoginForm = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 78,
+      lineNumber: 79,
       columnNumber: 21
     }
   }, "\uB610\uB294"), __jsx("div", {
@@ -270,15 +273,16 @@ const LoginForm = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 81,
+      lineNumber: 82,
       columnNumber: 21
     }
   })), __jsx(antd__WEBPACK_IMPORTED_MODULE_1__["Button"], {
+    onClick: () => next_router__WEBPACK_IMPORTED_MODULE_3___default.a.push('/'),
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 85,
-      columnNumber: 13
+      lineNumber: 86,
+      columnNumber: 17
     }
   }, "\uD68C\uC6D0\uAC00\uC785"));
 };
@@ -307,6 +311,17 @@ module.exports = __webpack_require__(/*! C:\Users\admin\Desktop\DecafMap\front\p
 /***/ (function(module, exports) {
 
 module.exports = require("antd");
+
+/***/ }),
+
+/***/ "next/router":
+/*!******************************!*\
+  !*** external "next/router" ***!
+  \******************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("next/router");
 
 /***/ }),
 

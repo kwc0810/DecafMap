@@ -69,7 +69,7 @@ const AppLayout = ({children}) => {
     
     return (
         <>
-            <div>
+            <div style={{width:'100%', height:'auto'}}>
                 <Header>
                     <HeaderWrapper>
                         <HeaderColumn>
@@ -91,8 +91,8 @@ const AppLayout = ({children}) => {
                              <Link href="/LoginForm"><a style={{color: '#000000'}}>로그인</a></Link>
                             </span>
                             
-                            <span>
-                                회원가입 
+                            <span> 
+                             <Link href="/singup"><a style={{color: '#000000'}}>회원가입</a></Link>
                             </span>
                         </HeaderColumn>
                     </HeaderWrapper>

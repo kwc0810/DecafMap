@@ -1,6 +1,7 @@
 import React from 'react';
 import { Form, Input, Button, Checkbox } from 'antd';
 import styled from 'styled-components';
+import Router from 'next/router';
 
 const Wrapper = styled.div`
     width:100%;
@@ -82,9 +83,10 @@ const LoginForm = () => {
                     
             </div>
             
-            <Button>
-                회원가입
-            </Button>
+                <Button onClick={()=> Router.push('/')}>
+                    회원가입
+                </Button>
+          
 
         </Wrapper>
     )
